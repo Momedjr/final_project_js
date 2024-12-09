@@ -1,0 +1,170 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #fff;
+  background: url('./hero.jpg') no-repeat center center/cover;
+  /* Full-page background */
+  background-attachment: fixed;
+  /* Makes the background stay in place */
+  height: 100%;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fff;
+  flex: 1;
+  /* Push the logo to the left */
+}
+
+ .nav-links {
+   display: flex;
+   list-style: none;
+ }
+
+ .nav-links li {
+   margin: 0 10px;
+ }
+
+ .nav-links a {
+   text-decoration: none;
+   color: #333;
+   font-size: 1rem;
+ }
+
+     .logo {
+       font-size: 1.5rem;
+       font-weight: bold;
+       color: #333;
+     }
+
+/* About Section */
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  height: 100vh;
+  /* Full viewport height */
+  text-align: left;
+  position: relative;
+  padding: 0 50px;
+}
+
+.hero-content {
+  z-index: 2;
+  width: 80%;
+}
+
+.paragraph {
+  font-size: 1.5rem;
+  line-height: 1.8;
+}
+
+.hero-content h1 {
+  font-size: 3.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  color: #fff;
+}
+
+/* Overlay for better text visibility */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  padding: 10px 20px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+/* Team Section */
+.team {
+  width: 100%;
+  padding: 50px 20px;
+  text-align: center;
+  position: relative;
+  
+
+}
+
+.team-header {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+  color: #fff;
+}
+
+.team-members {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  /* Space between cards */
+}
+
+.team-card {
+  background: rgba(0, 0, 0, 0.8);
+  /* Semi-transparent background */
+  color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  width: 250px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.team-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.4);
+}
+
+.team-member-img {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  margin-bottom: 15px;
+  border: 3px solid #007bff;
+}
+
+.team-member-name {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.team-member-role {
+  font-size: 1rem;
+  margin-bottom: 15px;
+  color: #ccc;
+}
+
+.team-btn {
+  background: #007bff;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.team-btn:hover {
+  background: #0056b3;
+}
